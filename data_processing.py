@@ -19,6 +19,7 @@ def rename_columns(df: pd.DataFrame):
 
 def remove_fully_null_columns_rows(df: pd.DataFrame):
     df = df.dropna(axis = 1, how = 'all')
+    df = df.dropna(axis = 0, how = 'all')
     return df
 
 def clean_and_fill_content_rating(df: pd.DataFrame):
