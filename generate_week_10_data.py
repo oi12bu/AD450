@@ -4,7 +4,7 @@ import pandas as pd
 
 def create_data():
     np.random.seed(10)
-    word_file = "/usr/share/dict/words"
+    word_file = "MOCK_DATA.csv"
     WORDS = open(word_file).read().splitlines()
     customers = pd.DataFrame({"customer_id": np.arange(1,11), 
                             "customer_age": np.random.uniform(0, 12*3, 10),
